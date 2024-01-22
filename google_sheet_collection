@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "b2470f72-8dbd-409d-a6a1-660418eea3d5",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25818332"
+	},
+	"item": [
+		{
+			"name": "get all data from gsheet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Prasanta Behera\",\r\n    \"age\":32,\r\n    \"salary\":32000.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/google/sheet/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"google",
+						"sheet",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"domainName\":\"cxp\",\r\n    \"codeConfigPNO\":\"NA\",\r\n    \"vastId\":\"\",\r\n    \"managerSignoff\":\"aluargun\",\r\n    \"onshoreDeliveryLead\":\"Harekrushna\",\r\n    \"vziDeliveryLead\":\"Radhesham\",\r\n    \"projectNumberName\":\"Project\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/google/sheet/data/update/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"google",
+						"sheet",
+						"data",
+						"update",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
